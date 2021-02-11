@@ -1,4 +1,5 @@
 思路与实现：
+
     一、思路
     1、用户通过jsp发送请求到DispatcherServlet
     2、根据xml配置或注解找到相应的Controller并提交请求
@@ -6,6 +7,7 @@
     4、处理视图映射并返回模型
     5、Http响应，将结果返回页面
     二、实现
+    
     1、controller层 
         LoginController类：继承HttpServlet 并重写dopost与doget方法。设置setCharacterEncoding为utf-8，并通过request的getParameter方法获取login.jsp提交的参数，调用LoginDao的login方法进行数据库校验，
         如果成功则getRequestDispatcher.forward重定向到welcome.jsp，失败则返回login.jsp
@@ -26,6 +28,6 @@
    
 效果：
 登录成功
-[!imagetext](https://github.com/AlxMan/stage2Model3/blob/master/src/main/webapp/WEB-INF/image/img_1.png)
+[!Image text](https://github.com/AlxMan/stage2Model3/blob/master/src/main/webapp/WEB-INF/image/img_1.png)
 失败重定向
-[!imagetext](https://github.com/AlxMan/stage2Model3/blob/master/src/main/webapp/WEB-INF/image/img.png)
+[!Image text](https://github.com/AlxMan/stage2Model3/blob/master/src/main/webapp/WEB-INF/image/img.png)
