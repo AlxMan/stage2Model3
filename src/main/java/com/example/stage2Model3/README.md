@@ -28,6 +28,6 @@
    
 效果：
 登录成功
-[!Image text](https://github.com/AlxMan/stage2Model3/blob/master/src/main/webapp/WEB-INF/image/img_1.png)
+![Image text](https://github.com/AlxMan/stage2Model3/blob/master/src/main/webapp/WEB-INF/image/img_1.png)
 失败重定向
-[!Image text](https://github.com/AlxMan/stage2Model3/blob/master/src/main/webapp/WEB-INF/image/img.png)
+![Image text](https://github.com/AlxMan/stage2Model3/blob/master/src/main/webapp/WEB-INF/image/img.png)
