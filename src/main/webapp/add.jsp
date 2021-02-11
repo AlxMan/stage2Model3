@@ -11,7 +11,7 @@
     <title>添加学生信息</title>
 </head>
 <body>
-<form action="AddController" method="post">
+<form action="addStudentController" method="post">
     学号：<input type="text" name="id"><br/>
     姓名：<input type="text" name="name"><br/>
     性别：<input type="text" name="sex"><br/>
