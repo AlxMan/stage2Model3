@@ -5,12 +5,9 @@ import com.example.stage2Model3.entity.Student;
 import java.sql.*;
 
 public class StudentDao {
-    //数据库URL和账号密码
     private static final String URL="jdbc:mysql://localhost:3306/login?serverTimezone=UTC&characterEncoding=utf-8";
     private static final String UNAME="root";
     private static final String UPWD="123456";
-
-    //数据库连接
     public static Connection getConn () {
         Connection conn = null;
 
@@ -55,8 +52,6 @@ public class StudentDao {
             e.printStackTrace();
         }
     }
-
-    //关闭conn和pstmt
     public static void closePart(Connection conn,PreparedStatement pstmt)
     {
         try {
@@ -80,7 +75,6 @@ public class StudentDao {
         }
     }
 
-    //添加学生信息
     public static boolean AddStudent(Student student) {
         boolean flag = false;
         String sql="insert into student(sno,sname,sage,shobby) values(?,?,?,?)" ;
@@ -107,11 +101,9 @@ public class StudentDao {
         return flag;
     }
 
-    //查询学生是否存在
     public static boolean isExist(int sno) {
         return Query(sno)==null? false:true;
     }
-    //根据学号查询学生全部信息
     public static Student Query(int id) {
         Student student= null;
         String sql="select * from student where sno =?" ;
