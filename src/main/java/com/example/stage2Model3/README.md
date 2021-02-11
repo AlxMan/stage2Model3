@@ -22,3 +22,10 @@
         StudentService类：调用AddStudent时，判断用户是否存在
     6、webapp
         web.xml配置servlet(名称、类全名)、servlet-mapping(映射名称、映射路径)与filter(名称、类全名)、filter-mapping(映射名称、映射路径)
+        
+   
+效果：
+登录成功
+[!imagetext](https://github.com/AlxMan/stage2Model3/blob/master/src/main/webapp/WEB-INF/image/img_1.png)
+失败重定向
+[!imagetext](https://github.com/AlxMan/stage2Model3/blob/master/src/main/webapp/WEB-INF/image/img.png)
